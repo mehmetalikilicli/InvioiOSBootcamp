@@ -4,12 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Section2 (Playground).xcscheme</key>
+		<key>TasarimCalismasi.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>17D4E7F028E0DF6A003BA02A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

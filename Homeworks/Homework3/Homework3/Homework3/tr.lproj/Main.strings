@@ -1,0 +1,48 @@
+
+/* Class = "UIButton"; configuration.title = "Seç"; ObjectID = "0xY-jH-BmG"; */
+"0xY-jH-BmG.configuration.title" = "Seç";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0xY-jH-BmG"; */
+"0xY-jH-BmG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Her ay yenilenir"; ObjectID = "2Sf-by-6o8"; */
+"2Sf-by-6o8.text" = "Her ay yenilenir";
+
+/* Class = "UILabel"; text = "Dakika ve Gün Seç"; ObjectID = "4Tx-LW-1i9"; */
+"4Tx-LW-1i9.text" = "Dakika ve Gün Seç";
+
+/* Class = "UILabel"; text = "Özel Dersler - 1:1 Abonelik"; ObjectID = "7et-yp-RUS"; */
+"7et-yp-RUS.text" = "Özel Dersler - 1:1 Abonelik";
+
+/* Class = "UILabel"; text = "₺ 1.664/ aylık"; ObjectID = "B7V-q8-0IE"; */
+"B7V-q8-0IE.text" = "₺ 1.664/ aylık";
+
+/* Class = "UILabel"; text = "Her ay yenilenir"; ObjectID = "Gb9-jv-erQ"; */
+"Gb9-jv-erQ.text" = "Her ay yenilenir";
+
+/* Class = "UILabel"; text = "₺ 1.664/ aylık"; ObjectID = "Y7k-1R-evz"; */
+"Y7k-1R-evz.text" = "₺ 1.664/ aylık";
+
+/* Class = "UILabel"; text = "Günde 30 Dakika"; ObjectID = "ZcA-1H-XRm"; */
+"ZcA-1H-XRm.text" = "Günde 30 Dakika";
+
+/* Class = "UILabel"; text = "Abonelik Uzunluğunu Seç"; ObjectID = "ce7-ST-LFv"; */
+"ce7-ST-LFv.text" = "Abonelik Uzunluğunu Seç";
+
+/* Class = "UILabel"; text = "Haftada 2 Gün"; ObjectID = "hJq-p2-fG9"; */
+"hJq-p2-fG9.text" = "Haftada 2 Gün";
+
+/* Class = "UIButton"; configuration.title = "Seç"; ObjectID = "jxd-R6-2vO"; */
+"jxd-R6-2vO.configuration.title" = "Seç";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jxd-R6-2vO"; */
+"jxd-R6-2vO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "1 Ay"; ObjectID = "kDS-Dr-rw9"; */
+"kDS-Dr-rw9.text" = "1 Ay";
+
+/* Class = "UILabel"; text = "1 Ay"; ObjectID = "sYD-M6-Xxk"; */
+"sYD-M6-Xxk.text" = "1 Ay";
+
+/* Class = "UILabel"; text = "Özel derslerle bugün İngilizce öğrenmeye başla!"; ObjectID = "um6-Tm-ExY"; */
+"um6-Tm-ExY.text" = "Özel derslerle bugün İngilizce öğrenmeye başla!";

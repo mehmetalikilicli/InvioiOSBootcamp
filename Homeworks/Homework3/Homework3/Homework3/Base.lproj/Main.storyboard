@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVM-1j-8xn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private Lessons - 1:1 Subscription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7et-yp-RUS">
+                                <rect key="frame" x="11.5" y="104" width="391" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Minutes and Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tx-LW-1i9">
+                                <rect key="frame" x="107.5" y="212.5" width="199.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start learning English with private lessons today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um6-Tm-ExY">
+                                <rect key="frame" x="23" y="150" width="368" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-sO-Rdh">
+                                <rect key="frame" x="20" y="281" width="142" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="wER-bE-INq"/>
+                                    <constraint firstAttribute="width" constant="142" id="ytE-7g-4di"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     30 Minutes a Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcA-1H-XRm">
+                                <rect key="frame" x="215" y="329" width="154.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days in a week       " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJq-p2-fG9">
+                                <rect key="frame" x="238" y="483.5" width="155.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Subscription Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce7-ST-LFv">
+                                <rect key="frame" x="79" y="585" width="256.5" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LNH-to-AaQ">
+                                <rect key="frame" x="80" y="654" width="254" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDS-Dr-rw9">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renewed every month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb9-jv-erQ">
+                                        <rect key="frame" x="0.0" y="36.5" width="254" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺ 1.664/ for month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7V-q8-0IE">
+                                        <rect key="frame" x="0.0" y="68.5" width="254" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="yaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="va3-5B-Qw9">
+                                <rect key="frame" x="80" y="767" width="140.5" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYD-M6-Xxk">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renewed every month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-by-6o8">
+                                        <rect key="frame" x="0.0" y="36.5" width="140.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺ 1.664/ for month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7k-1R-evz">
+                                        <rect key="frame" x="0.0" y="68.5" width="140.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="yaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB3-F7-tLQ">
+                                <rect key="frame" x="298" y="676" width="93" height="45"/>
+                                <color key="backgroundColor" name="yaziRenk2"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select">
+                                    <color key="baseForegroundColor" name="yaziRenk1"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-PS-GML">
+                                <rect key="frame" x="298" y="789" width="93" height="45"/>
+                                <color key="backgroundColor" name="yaziRenk2"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select">
+                                    <color key="baseForegroundColor" name="yaziRenk1"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="pJw-Qk-8M4">
+                                <rect key="frame" x="12" y="434" width="158" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="0Sq-56-joN"/>
+                                    <constraint firstAttribute="width" constant="158" id="Xoj-mi-YrK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7et-yp-RUS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0fT-2Q-A2x"/>
+                            <constraint firstItem="hJq-p2-fG9" firstAttribute="centerY" secondItem="pJw-Qk-8M4" secondAttribute="centerY" id="2fg-4V-HDF"/>
+                            <constraint firstItem="LNH-to-AaQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="45a-kb-3b6"/>
+                            <constraint firstItem="ce7-ST-LFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="92f-ck-1Qb"/>
+                            <constraint firstItem="ce7-ST-LFv" firstAttribute="top" secondItem="pJw-Qk-8M4" secondAttribute="bottom" constant="32" id="Blg-Ue-H4n"/>
+                            <constraint firstItem="ZcA-1H-XRm" firstAttribute="leading" secondItem="JPh-sO-Rdh" secondAttribute="trailing" constant="53" id="Cc9-k1-etc"/>
+                            <constraint firstItem="pJw-Qk-8M4" firstAttribute="top" secondItem="JPh-sO-Rdh" secondAttribute="bottom" constant="36" id="E9K-LK-VuJ"/>
+                            <constraint firstItem="va3-5B-Qw9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="HzP-q4-0vA"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="centerY" secondItem="va3-5B-Qw9" secondAttribute="centerY" id="Lyu-05-Fc8"/>
+                            <constraint firstItem="LNH-to-AaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P0A-kC-0p0"/>
+                            <constraint firstItem="pJw-Qk-8M4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="PJH-MZ-lFk"/>
+                            <constraint firstItem="ZcA-1H-XRm" firstAttribute="top" secondItem="4Tx-LW-1i9" secondAttribute="bottom" constant="96" id="RBa-dx-WsX"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="trailing" secondItem="um6-Tm-ExY" secondAttribute="trailing" id="Rhp-cc-Xkd"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="leading" secondItem="pB3-F7-tLQ" secondAttribute="leading" id="XET-bY-1ud"/>
+                            <constraint firstItem="JPh-sO-Rdh" firstAttribute="top" secondItem="4Tx-LW-1i9" secondAttribute="bottom" constant="48" id="XOA-5E-ocW"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="trailing" secondItem="pB3-F7-tLQ" secondAttribute="trailing" id="bc2-Wl-1nd"/>
+                            <constraint firstItem="LNH-to-AaQ" firstAttribute="top" secondItem="ce7-ST-LFv" secondAttribute="bottom" constant="46" id="bgh-oQ-ds0"/>
+                            <constraint firstItem="7et-yp-RUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btp-hQ-tFo"/>
+                            <constraint firstItem="va3-5B-Qw9" firstAttribute="top" secondItem="LNH-to-AaQ" secondAttribute="bottom" constant="24" id="c9T-Bl-TEk"/>
+                            <constraint firstItem="hJq-p2-fG9" firstAttribute="leading" secondItem="pJw-Qk-8M4" secondAttribute="trailing" constant="68" id="hOe-L9-QjX"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="top" secondItem="LNH-to-AaQ" secondAttribute="bottom" constant="46" id="jnD-pe-5lp"/>
+                            <constraint firstItem="ZcA-1H-XRm" firstAttribute="centerY" secondItem="JPh-sO-Rdh" secondAttribute="centerY" id="m7B-LX-Drj"/>
+                            <constraint firstItem="vTR-PS-GML" firstAttribute="leading" secondItem="va3-5B-Qw9" secondAttribute="trailing" constant="77.5" id="mBR-Gl-U9i"/>
+                            <constraint firstItem="pB3-F7-tLQ" firstAttribute="top" secondItem="ce7-ST-LFv" secondAttribute="bottom" constant="68" id="nOQ-qq-Yjj"/>
+                            <constraint firstItem="4Tx-LW-1i9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pY5-P2-iMH"/>
+                            <constraint firstItem="um6-Tm-ExY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phK-Sp-hAq"/>
+                            <constraint firstItem="um6-Tm-ExY" firstAttribute="top" secondItem="7et-yp-RUS" secondAttribute="bottom" constant="16" id="px6-DM-9Hc"/>
+                            <constraint firstItem="JPh-sO-Rdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sK6-cf-9sF"/>
+                            <constraint firstItem="pB3-F7-tLQ" firstAttribute="centerY" secondItem="LNH-to-AaQ" secondAttribute="centerY" id="tqA-u8-0ub"/>
+                            <constraint firstItem="4Tx-LW-1i9" firstAttribute="top" secondItem="um6-Tm-ExY" secondAttribute="bottom" constant="42" id="uqa-Vp-fTf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Crc-2e-9nC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102.8985507246377" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xUs-1o-P6B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oVM-1j-8xn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZg-Xm-hLJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HAf-pv-sct"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dty-bp-Vs5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="day" width="220" height="220"/>
+        <image name="minute" width="220" height="220"/>
+        <namedColor name="yaziRenk1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="yaziRenk2">
+            <color red="0.13699999451637268" green="0.54100000858306885" blue="0.57999998331069946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

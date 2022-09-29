@@ -285,7 +285,7 @@ print("Film kategorisi : \(film1.kategori!.kategoriAd!)")
 print("Film yonetmen : \(film1.yonetmen!.yonetmenAd!)")
 
 
-
+*/
 
 //INHERITANCE
 class Ev {
@@ -323,7 +323,7 @@ print(topkapiSarayi.pencereSayisi!)
 print(bogazVilla.pencereSayisi!)
 print(bogazVilla.garajVarmi!)
 
- */
+ /*
 
 //Override
 class Hayvan {
@@ -363,4 +363,91 @@ kopek.sesCikar()
 
 var kedi2 = Memeli()
 kedi2.sesCikar()
+
+
+//Nesen Dönüşümleri
+
+// Ön koşul kalıtım olması
+
+
+*/
+
+//Upcasting
+
+var ev = Saray(kuleSayisi: 3, pencereSayisi: 10) as Ev
+
+//Downcasting
+
+var saray = Ev(pencereSayisi: 4) as? Saray
+
+if let saray2 = Ev(pencereSayisi: 4) as? Saray {
+    
+}
+
+
+if ev is Ev {
+    print("Nesne ev sinifindan turemistir")
+} else {
+    print("Nesne ev sinifindan turememistir")
+}
+
+
+//Protocol - Interface
+
+
+protocol MyProtocol {
+    var degisken : Int { get set}
+    
+    func method1()
+    func method2() -> String
+    
+}
+
+
+class ClassB : MyProtocol {
+    var degisken: Int = 0
+    
+    func method1() {
+        print("Method 1 calisti")
+    }//
+
+    
+    func method2() -> String {
+        return "Method 2 calisti"
+    }
+    
+}
+
+var classBobject = ClassB()
+
+classBobject.method1()
+print("\(classBobject.method2())")
+
+//Extension
+
+extension Int {
+    func carp(sayi : Int) -> Int {
+     return self * sayi
+    }
+}
+
+let extensionX = 3.carp(sayi: 5)
+print(extensionX)
+
+// Closure
+
+let message = {
+    print("Calisti ")
+}
+
+message()
+
+let topla = {
+    (sayi1 : Int, sayi2 : Int) -> Int in
+    return sayi1 + sayi2
+}
+
+let topla1 = topla(10,30)
+print(topla1)
+
 
