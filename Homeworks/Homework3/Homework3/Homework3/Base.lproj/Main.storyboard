@@ -197,8 +197,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="day" width="220" height="220"/>
-        <image name="minute" width="220" height="220"/>
+        <image name="day" width="110" height="110"/>
+        <image name="minute" width="110" height="110"/>
         <namedColor name="yaziRenk1">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

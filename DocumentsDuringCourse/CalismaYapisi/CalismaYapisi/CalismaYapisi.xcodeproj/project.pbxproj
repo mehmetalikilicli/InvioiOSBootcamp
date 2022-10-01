@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171B3C7428E5FC280040AD55 /* OyunEkrani.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3C7328E5FC280040AD55 /* OyunEkrani.swift */; };
+		171B3C7628E5FC370040AD55 /* SonucEkrani.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3C7528E5FC370040AD55 /* SonucEkrani.swift */; };
+		171B3C7828E60D610040AD55 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3C7728E60D610040AD55 /* Kisiler.swift */; };
 		1738977328E38519000BEF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738977228E38519000BEF58 /* AppDelegate.swift */; };
 		1738977528E38519000BEF58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738977428E38519000BEF58 /* SceneDelegate.swift */; };
 		1738977728E38519000BEF58 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738977628E38519000BEF58 /* Anasayfa.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171B3C7328E5FC280040AD55 /* OyunEkrani.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunEkrani.swift; sourceTree = "<group>"; };
+		171B3C7528E5FC370040AD55 /* SonucEkrani.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkrani.swift; sourceTree = "<group>"; };
+		171B3C7728E60D610040AD55 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 		1738976F28E38519000BEF58 /* CalismaYapisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalismaYapisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1738977228E38519000BEF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1738977428E38519000BEF58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				1738977228E38519000BEF58 /* AppDelegate.swift */,
 				1738977428E38519000BEF58 /* SceneDelegate.swift */,
 				1738977628E38519000BEF58 /* Anasayfa.swift */,
+				171B3C7528E5FC370040AD55 /* SonucEkrani.swift */,
+				171B3C7728E60D610040AD55 /* Kisiler.swift */,
+				171B3C7328E5FC280040AD55 /* OyunEkrani.swift */,
 				1738977828E38519000BEF58 /* Main.storyboard */,
 				1738977B28E3851A000BEF58 /* Assets.xcassets */,
 				1738977D28E3851A000BEF58 /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171B3C7428E5FC280040AD55 /* OyunEkrani.swift in Sources */,
 				1738977728E38519000BEF58 /* Anasayfa.swift in Sources */,
 				1738977328E38519000BEF58 /* AppDelegate.swift in Sources */,
+				171B3C7628E5FC370040AD55 /* SonucEkrani.swift in Sources */,
 				1738977528E38519000BEF58 /* SceneDelegate.swift in Sources */,
+				171B3C7828E60D610040AD55 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
