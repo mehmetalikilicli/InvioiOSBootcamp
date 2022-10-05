@@ -13,6 +13,7 @@
 		17D4E7FC28E0DF6A003BA02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D4E7FA28E0DF6A003BA02A /* Main.storyboard */; };
 		17D4E7FE28E0DF6D003BA02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D4E7FD28E0DF6D003BA02A /* Assets.xcassets */; };
 		17D4E80128E0DF6D003BA02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D4E7FF28E0DF6D003BA02A /* LaunchScreen.storyboard */; };
+		17D797AC28EAE34C0070C211 /* Neonderthaw-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17D797AB28EAE34C0070C211 /* Neonderthaw-Regular.ttf */; };
 		17D8783A28E364C200B86310 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17D8783928E364C200B86310 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		17D4E7FD28E0DF6D003BA02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17D4E80028E0DF6D003BA02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17D4E80228E0DF6D003BA02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D797AB28EAE34C0070C211 /* Neonderthaw-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neonderthaw-Regular.ttf"; sourceTree = "<group>"; };
 		17D8783928E364C200B86310 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		17D8783B28E37AB700B86310 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		17D8783C28E37AB700B86310 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				17D8783928E364C200B86310 /* Pacifico-Regular.ttf */,
+				17D797AB28EAE34C0070C211 /* Neonderthaw-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D4E80128E0DF6D003BA02A /* LaunchScreen.storyboard in Resources */,
+				17D797AC28EAE34C0070C211 /* Neonderthaw-Regular.ttf in Resources */,
 				17D8783A28E364C200B86310 /* Pacifico-Regular.ttf in Resources */,
 				17D4E7FE28E0DF6D003BA02A /* Assets.xcassets in Resources */,
 				17D4E7FC28E0DF6A003BA02A /* Main.storyboard in Resources */,
