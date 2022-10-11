@@ -1,5 +1,9 @@
 # InvioiOSBootcamp
 
+Homework6
+
+<img width="452" alt="Screen Shot 2022-10-11 at 17 22 08" src="https://user-images.githubusercontent.com/58392243/195118574-b9274508-9f19-4223-8a0d-d9e1e8a396b8.png">
+
 Homework5
 
 ![calculatorGif](https://user-images.githubusercontent.com/58392243/194115463-7b62f62e-2186-462c-a959-d91cbb9af79f.gif)
