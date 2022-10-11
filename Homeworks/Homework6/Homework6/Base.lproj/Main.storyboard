@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="of7-Pu-1ll">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--fizy-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z80-yV-6kg">
+                                <rect key="frame" x="0.0" y="88" width="384" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicFirst" translatesAutoresizingMaskIntoConstraints="NO" id="86h-mY-0Pq">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="016-uN-gim"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bugüne özel seçimler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baj-YF-1XV">
+                                        <rect key="frame" x="88" y="0.0" width="200" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="8fr-wd-QA6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CSp-NQ-r6b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sIk-GL-5YK">
+                                        <rect key="frame" x="296" y="0.0" width="88" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="Rv6-55-Dyk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sIk-GL-5YK" firstAttribute="leading" secondItem="z80-yV-6kg" secondAttribute="leading" constant="336" id="vqE-U4-Oxu"/>
+                                    <constraint firstItem="86h-mY-0Pq" firstAttribute="centerY" secondItem="z80-yV-6kg" secondAttribute="centerY" id="x6B-ww-plJ"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-Eg-uRY">
+                                <rect key="frame" x="0.0" y="123" width="414" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="mY1-i2-yBM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aR8-5e-gYq">
+                                    <size key="itemSize" width="155" height="230"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryHucre" id="24W-HJ-7Ss" customClass="MusicCollectionViewCell" customModule="Homework6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-5" width="155" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j3y-fC-ell">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fizy vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNW-q8-Mu0">
+                                                    <rect key="frame" x="20" y="148" width="140" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fizy - 38 Şarkı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e27-Uu-pcr">
+                                                    <rect key="frame" x="20" y="189" width="140" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-8p-Cxb">
+                                                    <rect key="frame" x="-20" y="8" width="180" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="r5Z-04-XFf"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WpX-8p-Cxb" firstAttribute="leading" secondItem="j3y-fC-ell" secondAttribute="leading" id="1q5-v2-pi0"/>
+                                                <constraint firstItem="WpX-8p-Cxb" firstAttribute="top" secondItem="j3y-fC-ell" secondAttribute="top" id="2Vt-JW-QcF"/>
+                                                <constraint firstItem="FNW-q8-Mu0" firstAttribute="top" secondItem="WpX-8p-Cxb" secondAttribute="bottom" constant="20" id="D4A-RZ-V86"/>
+                                                <constraint firstAttribute="trailing" secondItem="FNW-q8-Mu0" secondAttribute="trailing" constant="20" id="Egj-hl-COv"/>
+                                                <constraint firstItem="e27-Uu-pcr" firstAttribute="leading" secondItem="j3y-fC-ell" secondAttribute="leading" constant="20" id="FyI-Ug-NCx"/>
+                                                <constraint firstAttribute="trailing" secondItem="e27-Uu-pcr" secondAttribute="trailing" constant="20" id="PYc-Tc-W31"/>
+                                                <constraint firstItem="FNW-q8-Mu0" firstAttribute="centerX" secondItem="j3y-fC-ell" secondAttribute="centerX" id="TBn-U7-eGH"/>
+                                                <constraint firstItem="FNW-q8-Mu0" firstAttribute="leading" secondItem="j3y-fC-ell" secondAttribute="leading" constant="20" id="nNv-ZZ-EdF"/>
+                                                <constraint firstItem="e27-Uu-pcr" firstAttribute="top" secondItem="FNW-q8-Mu0" secondAttribute="bottom" constant="10" id="rtm-Sz-7cf"/>
+                                                <constraint firstAttribute="trailing" secondItem="WpX-8p-Cxb" secondAttribute="trailing" id="yML-HT-Pwm"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="155" height="230"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="WpX-8p-Cxb" id="nZu-lB-r4X"/>
+                                            <outlet property="label1" destination="FNW-q8-Mu0" id="Y65-z6-rij"/>
+                                            <outlet property="label2" destination="e27-Uu-pcr" id="wQ3-Ns-cRe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCI-vZ-Moz">
+                                <rect key="frame" x="0.0" y="351" width="384" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicSecond" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-3z-kuC">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="0fd-qr-RC4"/>
+                                            <constraint firstAttribute="width" constant="80" id="k47-Xp-ZeQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="lBr-65-fTY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık mixlerim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-09-bKd">
+                                        <rect key="frame" x="80" y="0.0" width="216" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="BV5-We-Jcx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nSt-LL-CYj">
+                                        <rect key="frame" x="296" y="0.0" width="88" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="Fvp-YP-zFH"/>
+                                            <constraint firstAttribute="height" constant="36" id="Ysn-mn-dsl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-YV-dYr">
+                                <rect key="frame" x="0.0" y="391" width="408" height="237"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="AXH-bY-ENP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="byc-nZ-VRj">
+                                    <size key="itemSize" width="180" height="235"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="category2Hucre" id="c3g-mU-1ei" customClass="Music2CollectionViewCell" customModule="Homework6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="180" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Oem-c2-UKk">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="235"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="x71-NU-ZAC">
+                                                    <rect key="frame" x="-36" y="0.0" width="265" height="139"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="139" id="cUU-Bn-g0d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fizy - 25 Şarkı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-fO-qcH">
+                                                    <rect key="frame" x="20" y="175" width="79.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık Keşif Listesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRk-zC-P3t">
+                                                    <rect key="frame" x="20" y="160" width="114.5" height="6.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="x71-NU-ZAC" firstAttribute="top" secondItem="Oem-c2-UKk" secondAttribute="top" id="1VQ-oy-Xzw"/>
+                                                <constraint firstAttribute="trailing" secondItem="mRk-zC-P3t" secondAttribute="trailing" constant="45.5" id="JB9-ij-d7W"/>
+                                                <constraint firstItem="R9r-fO-qcH" firstAttribute="top" secondItem="mRk-zC-P3t" secondAttribute="bottom" constant="8.5" id="Z0E-ZS-OQq"/>
+                                                <constraint firstItem="x71-NU-ZAC" firstAttribute="leading" secondItem="Oem-c2-UKk" secondAttribute="leading" constant="-36" id="Z5y-gW-snB"/>
+                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="top" secondItem="x71-NU-ZAC" secondAttribute="bottom" constant="21" id="Zsm-ZW-Zqo"/>
+                                                <constraint firstItem="R9r-fO-qcH" firstAttribute="leading" secondItem="Oem-c2-UKk" secondAttribute="leading" constant="20" id="g9H-uQ-rC8"/>
+                                                <constraint firstAttribute="trailing" secondItem="x71-NU-ZAC" secondAttribute="trailing" constant="-49" id="j9g-md-jvU"/>
+                                                <constraint firstItem="R9r-fO-qcH" firstAttribute="top" secondItem="x71-NU-ZAC" secondAttribute="bottom" constant="36" id="jL0-BA-rZl"/>
+                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="leading" secondItem="R9r-fO-qcH" secondAttribute="leading" id="qw4-90-2wZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="180" height="235"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="x71-NU-ZAC" id="l2H-EH-udd"/>
+                                            <outlet property="label1" destination="mRk-zC-P3t" id="56S-L5-qbe"/>
+                                            <outlet property="label2" destination="R9r-fO-qcH" id="wNs-LZ-gLe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3M-rt-mMY">
+                                <rect key="frame" x="0.0" y="636" width="408" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicThird" translatesAutoresizingMaskIntoConstraints="NO" id="FmR-Ua-C3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="0DL-We-tQL"/>
+                                            <constraint firstAttribute="width" constant="80" id="ELu-Ep-gB9"/>
+                                            <constraint firstAttribute="height" constant="40" id="oqa-cR-ihI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sevebileceğin çalma listeleri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyw-Mi-Dsg">
+                                        <rect key="frame" x="80" y="0.0" width="240" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="149-G9-YwI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-yc-xxN">
+                                        <rect key="frame" x="320" y="0.0" width="88" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="a7a-gy-Zya"/>
+                                            <constraint firstAttribute="height" constant="36" id="umh-qb-Jg5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-lZ-aze">
+                                <rect key="frame" x="0.0" y="695" width="414" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="okQ-54-5Jj">
+                                    <size key="itemSize" width="155" height="230"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="category3Hucre" id="rZI-9M-0Jf" customClass="Music3CollectionViewCell" customModule="Homework6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-5" width="155" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iDf-n9-syA">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="230"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fizy vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-S8-Miy">
+                                                    <rect key="frame" x="20" y="148" width="140" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fizy - 38 Şarkı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-Jr-pC6">
+                                                    <rect key="frame" x="20" y="189" width="140" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="e7z-ET-Arn">
+                                                    <rect key="frame" x="-20" y="8" width="180" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="wn7-JD-h9Y"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="sbU-Jr-pC6" secondAttribute="trailing" constant="20" id="7cC-kZ-VGz"/>
+                                                <constraint firstItem="e7z-ET-Arn" firstAttribute="leading" secondItem="iDf-n9-syA" secondAttribute="leading" id="8qc-2f-rwv"/>
+                                                <constraint firstItem="sbU-Jr-pC6" firstAttribute="leading" secondItem="iDf-n9-syA" secondAttribute="leading" constant="20" id="Cld-f5-o0R"/>
+                                                <constraint firstItem="EeU-S8-Miy" firstAttribute="leading" secondItem="iDf-n9-syA" secondAttribute="leading" constant="20" id="F6Y-7i-tCs"/>
+                                                <constraint firstItem="EeU-S8-Miy" firstAttribute="centerX" secondItem="iDf-n9-syA" secondAttribute="centerX" id="MFK-vH-D0S"/>
+                                                <constraint firstAttribute="trailing" secondItem="EeU-S8-Miy" secondAttribute="trailing" constant="20" id="N6W-8f-ddR"/>
+                                                <constraint firstItem="EeU-S8-Miy" firstAttribute="top" secondItem="e7z-ET-Arn" secondAttribute="bottom" constant="20" id="TJm-5M-0U4"/>
+                                                <constraint firstItem="e7z-ET-Arn" firstAttribute="top" secondItem="iDf-n9-syA" secondAttribute="top" id="USD-ol-zg0"/>
+                                                <constraint firstItem="sbU-Jr-pC6" firstAttribute="top" secondItem="EeU-S8-Miy" secondAttribute="bottom" constant="10" id="Xgr-s5-aP3"/>
+                                                <constraint firstAttribute="trailing" secondItem="e7z-ET-Arn" secondAttribute="trailing" id="foi-rc-K6p"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="155" height="230"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="e7z-ET-Arn" id="dIa-ws-vAz"/>
+                                            <outlet property="label1" destination="EeU-S8-Miy" id="dQh-pF-37t"/>
+                                            <outlet property="label2" destination="sbU-Jr-pC6" id="1ck-wO-RjO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="leading" secondItem="z80-yV-6kg" secondAttribute="leading" id="41E-KS-5Wo"/>
+                            <constraint firstItem="N3M-rt-mMY" firstAttribute="top" secondItem="x2Z-YV-dYr" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ur-j6-Fuv"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="9e0-6g-lro"/>
+                            <constraint firstItem="bzP-lZ-aze" firstAttribute="leading" secondItem="N3M-rt-mMY" secondAttribute="leading" id="Ca2-Yc-V1J"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="leading" secondItem="vCI-vZ-Moz" secondAttribute="leading" id="DSn-fZ-DZe"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Eti-ZR-Ryz"/>
+                            <constraint firstItem="x2Z-YV-dYr" firstAttribute="top" secondItem="vCI-vZ-Moz" secondAttribute="bottom" id="Fgp-GJ-Ny5"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="trailing" secondItem="vCI-vZ-Moz" secondAttribute="trailing" id="L0N-js-BT5"/>
+                            <constraint firstItem="vCI-vZ-Moz" firstAttribute="top" secondItem="rh9-Eg-uRY" secondAttribute="bottom" constant="8" symbolic="YES" id="Wn9-3w-xvX"/>
+                            <constraint firstItem="vCI-vZ-Moz" firstAttribute="leading" secondItem="x2Z-YV-dYr" secondAttribute="leading" id="Xve-oR-qDX"/>
+                            <constraint firstAttribute="trailing" secondItem="x2Z-YV-dYr" secondAttribute="trailing" id="YF9-Wb-a2h"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="trailing" secondItem="x2Z-YV-dYr" secondAttribute="trailing" id="cPp-SN-Qq1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x2Z-YV-dYr" secondAttribute="bottom" constant="234" id="eej-P1-fG3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bzP-lZ-aze" secondAttribute="bottom" constant="-53" id="itL-o6-lb9"/>
+                            <constraint firstItem="z80-yV-6kg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pYI-9h-OsE"/>
+                            <constraint firstItem="N3M-rt-mMY" firstAttribute="leading" secondItem="x2Z-YV-dYr" secondAttribute="leading" id="saL-3Y-Bbl"/>
+                            <constraint firstItem="rh9-Eg-uRY" firstAttribute="trailing" secondItem="z80-yV-6kg" secondAttribute="trailing" id="uug-0Q-dXh"/>
+                            <constraint firstItem="bzP-lZ-aze" firstAttribute="trailing" secondItem="rh9-Eg-uRY" secondAttribute="trailing" id="wqa-Xj-dO1"/>
+                            <constraint firstItem="bzP-lZ-aze" firstAttribute="top" secondItem="N3M-rt-mMY" secondAttribute="bottom" constant="19" id="zXN-QR-MFF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="fizy" id="tdP-vX-VUZ"/>
+                    <connections>
+                        <outlet property="category1CollectionView" destination="rh9-Eg-uRY" id="26q-MX-taf"/>
+                        <outlet property="category2CollectionView" destination="x2Z-YV-dYr" id="eDA-W2-d0R"/>
+                        <outlet property="category3CollectionView" destination="bzP-lZ-aze" id="lOg-pZ-m6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Wo-Aa-c9Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="of7-Pu-1ll" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jMc-Xk-Ju4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9HM-uf-J3A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bl0-ug-StK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1" width="193" height="193"/>
+        <image name="image2" width="193" height="193"/>
+        <image name="lastIcon" width="36" height="36"/>
+        <image name="musicFirst" width="36" height="36"/>
+        <image name="musicSecond" width="36" height="36"/>
+        <image name="musicThird" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

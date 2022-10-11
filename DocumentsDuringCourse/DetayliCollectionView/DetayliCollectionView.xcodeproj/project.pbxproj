@@ -15,6 +15,7 @@
 		172CA7CB28ECC19E00522A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172CA7C928ECC19E00522A7B /* LaunchScreen.storyboard */; };
 		172CA7D328ECC29900522A7B /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172CA7D228ECC29800522A7B /* Filmler.swift */; };
 		172CA7D528ECC48400522A7B /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172CA7D428ECC48400522A7B /* FilmCollectionViewCell.swift */; };
+		1794ABEC28EF3ED00088D292 /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794ABEB28EF3ED00088D292 /* DetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		172CA7CC28ECC19E00522A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172CA7D228ECC29800522A7B /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
 		172CA7D428ECC48400522A7B /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
+		1794ABEB28EF3ED00088D292 /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				172CA7BE28ECC19D00522A7B /* AppDelegate.swift */,
 				172CA7C028ECC19D00522A7B /* SceneDelegate.swift */,
 				172CA7C228ECC19D00522A7B /* ViewController.swift */,
+				1794ABEB28EF3ED00088D292 /* DetayVC.swift */,
 				172CA7D428ECC48400522A7B /* FilmCollectionViewCell.swift */,
 				172CA7D228ECC29800522A7B /* Filmler.swift */,
 				172CA7C428ECC19D00522A7B /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1794ABEC28EF3ED00088D292 /* DetayVC.swift in Sources */,
 				172CA7C328ECC19D00522A7B /* ViewController.swift in Sources */,
 				172CA7D528ECC48400522A7B /* FilmCollectionViewCell.swift in Sources */,
 				172CA7BF28ECC19D00522A7B /* AppDelegate.swift in Sources */,
