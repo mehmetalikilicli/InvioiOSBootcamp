@@ -42,11 +42,40 @@ class AnasayfaInteractor : PresenterToInteractorAnasayfaProtocol{
     }
     
     func kisiAra(aramaKelimes: String) {
-        print("Kisi ara : \(aramaKelimes)")
-    }
+        var liste = [Kisiler]()
+        
+        dataBase?.open()
+        
+        do {
+            
+            let r = try dataBase!.executeQuery("SELECT * FROM WHERE kisi_ad like '%\(aramaKelimes)%'", values: nil)
+            
+            while r.next() {
+                let kisi = Kisiler(kisi_id: Int(r.string(forColumn: "kisi_id"))!, kisi_ad: r.string(forColumn: "kisi_ad")!, kisi_tel: r.string(forColumn: "kisi_tel")!)
+                liste.append(kisi)
+            }
+            
+            anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        dataBase?.close()    }
     
     func kisiSil(kisi_id: Int) {
-        print("Kisi sil : \(kisi_id)")
+        
+        dataBase?.open()
+        
+        do {
+            try dataBase!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [kisi_id])
+            tumKisileriAl()
+        } catch {
+            print(error.localizedDescription)
+        }
+        dataBase?.close()
+
+
     }
     
     

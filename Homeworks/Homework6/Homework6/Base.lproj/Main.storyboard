@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z80-yV-6kg">
-                                <rect key="frame" x="0.0" y="88" width="384" height="36"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicFirst" translatesAutoresizingMaskIntoConstraints="NO" id="86h-mY-0Pq">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
@@ -28,7 +28,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bugüne özel seçimler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baj-YF-1XV">
-                                        <rect key="frame" x="88" y="0.0" width="200" height="36"/>
+                                        <rect key="frame" x="88" y="0.0" width="230" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="8fr-wd-QA6"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CSp-NQ-r6b"/>
@@ -38,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sIk-GL-5YK">
-                                        <rect key="frame" x="296" y="0.0" width="88" height="36"/>
+                                        <rect key="frame" x="326" y="0.0" width="88" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="88" id="Rv6-55-Dyk"/>
                                         </constraints>
@@ -50,7 +50,7 @@
                                     <constraint firstItem="86h-mY-0Pq" firstAttribute="centerY" secondItem="z80-yV-6kg" secondAttribute="centerY" id="x6B-ww-plJ"/>
                                 </constraints>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-Eg-uRY">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-Eg-uRY">
                                 <rect key="frame" x="0.0" y="123" width="414" height="220"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -112,7 +112,7 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCI-vZ-Moz">
-                                <rect key="frame" x="0.0" y="351" width="384" height="40"/>
+                                <rect key="frame" x="0.0" y="351" width="414" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicSecond" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-3z-kuC">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
@@ -123,7 +123,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık mixlerim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-09-bKd">
-                                        <rect key="frame" x="80" y="0.0" width="216" height="40"/>
+                                        <rect key="frame" x="80" y="0.0" width="246" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="BV5-We-Jcx"/>
                                         </constraints>
@@ -132,7 +132,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nSt-LL-CYj">
-                                        <rect key="frame" x="296" y="0.0" width="88" height="40"/>
+                                        <rect key="frame" x="326" y="0.0" width="88" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="88" id="Fvp-YP-zFH"/>
                                             <constraint firstAttribute="height" constant="36" id="Ysn-mn-dsl"/>
@@ -182,14 +182,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="x71-NU-ZAC" firstAttribute="top" secondItem="Oem-c2-UKk" secondAttribute="top" id="1VQ-oy-Xzw"/>
-                                                <constraint firstAttribute="trailing" secondItem="mRk-zC-P3t" secondAttribute="trailing" constant="45.5" id="JB9-ij-d7W"/>
-                                                <constraint firstItem="R9r-fO-qcH" firstAttribute="top" secondItem="mRk-zC-P3t" secondAttribute="bottom" constant="8.5" id="Z0E-ZS-OQq"/>
+                                                <constraint firstItem="R9r-fO-qcH" firstAttribute="top" secondItem="mRk-zC-P3t" secondAttribute="bottom" constant="8.5" id="AO9-qN-P4g"/>
                                                 <constraint firstItem="x71-NU-ZAC" firstAttribute="leading" secondItem="Oem-c2-UKk" secondAttribute="leading" constant="-36" id="Z5y-gW-snB"/>
-                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="top" secondItem="x71-NU-ZAC" secondAttribute="bottom" constant="21" id="Zsm-ZW-Zqo"/>
                                                 <constraint firstItem="R9r-fO-qcH" firstAttribute="leading" secondItem="Oem-c2-UKk" secondAttribute="leading" constant="20" id="g9H-uQ-rC8"/>
+                                                <constraint firstAttribute="trailing" secondItem="mRk-zC-P3t" secondAttribute="trailing" constant="45.5" id="iXJ-J6-MvT"/>
                                                 <constraint firstAttribute="trailing" secondItem="x71-NU-ZAC" secondAttribute="trailing" constant="-49" id="j9g-md-jvU"/>
                                                 <constraint firstItem="R9r-fO-qcH" firstAttribute="top" secondItem="x71-NU-ZAC" secondAttribute="bottom" constant="36" id="jL0-BA-rZl"/>
-                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="leading" secondItem="R9r-fO-qcH" secondAttribute="leading" id="qw4-90-2wZ"/>
+                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="leading" secondItem="R9r-fO-qcH" secondAttribute="leading" id="qAu-k8-zpi"/>
+                                                <constraint firstItem="mRk-zC-P3t" firstAttribute="top" secondItem="x71-NU-ZAC" secondAttribute="bottom" constant="21" id="sSO-SC-ngd"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="235"/>
@@ -231,7 +231,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-lZ-aze">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-lZ-aze">
                                 <rect key="frame" x="0.0" y="695" width="414" height="220"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="okQ-54-5Jj">
