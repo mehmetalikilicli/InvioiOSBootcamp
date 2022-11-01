@@ -43,12 +43,10 @@ class ViewController: UIViewController {
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(resimAdi)"){
             DispatchQueue.main.async {
                 self.ivResim.kf.setImage(with: url)
+                
             }
             
         }
     }
-    
-    
-    
 }
 
