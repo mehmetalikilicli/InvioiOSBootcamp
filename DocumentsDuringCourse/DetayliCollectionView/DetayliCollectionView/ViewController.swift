@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DetayliCollectionView
 //
-//  Created by Mehmet Ali Kılıçlı on 4.10.2022.
+//  Created by Kasım on 4.10.2022.
 //
 
 import UIKit
@@ -13,37 +13,20 @@ class ViewController: UIViewController {
     
     var filmlerListesi = [Filmler]()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        let film1 = Filmler(filmId: 1, filmAd: "Django", filmResimadi: "django", filmYonetmenAdi: "Quentin Tarantino", filmFiyat: 15)
-        let film2 = Filmler(filmId: 2, filmAd: "Inception", filmResimadi: "inception", filmYonetmenAdi: "Chrsitopher Nolan", filmFiyat: 10)
-        let film3 = Filmler(filmId: 3, filmAd: "Interstellar", filmResimadi: "interstellar", filmYonetmenAdi: "Chrsitopher Nolan", filmFiyat: 15)
-        let film4 = Filmler(filmId: 4, filmAd: "Anadoluda", filmResimadi: "anadoluda", filmYonetmenAdi: "Nuri Bilge Ceylan", filmFiyat: 32)
-        let film5 = Filmler(filmId: 5, filmAd: "The Hateful Eight", filmResimadi: "thehatefuleight", filmYonetmenAdi: "Quentin Tarantino", filmFiyat: 12)
-        let film6 = Filmler(filmId: 6, filmAd: "The Pianist", filmResimadi: "thepianist", filmYonetmenAdi: "Roman Polanski", filmFiyat: 7)
-
-        filmlerListesi.append(film1)
-        filmlerListesi.append(film2)
-        filmlerListesi.append(film3)
-        filmlerListesi.append(film4)
-        filmlerListesi.append(film5)
-        filmlerListesi.append(film6)
-        filmlerListesi.append(film1)
-        filmlerListesi.append(film2)
-        filmlerListesi.append(film3)
-        filmlerListesi.append(film4)
-        filmlerListesi.append(film5)
-        filmlerListesi.append(film6)
-        filmlerListesi.append(film1)
-        filmlerListesi.append(film2)
-        filmlerListesi.append(film3)
-        filmlerListesi.append(film4)
-        filmlerListesi.append(film5)
-        filmlerListesi.append(film6)
+        let f1 = Filmler(filmId: 1, filmAdi: "Django", filmResimAdi: "django", filmYonetmenAdi: "Quentin Tarantino", filmFiyat: 15)
+        let f2 = Filmler(filmId: 2, filmAdi: "Inception", filmResimAdi: "inception", filmYonetmenAdi: "Chrsitopher Nolan", filmFiyat: 10)
+        let f3 = Filmler(filmId: 3, filmAdi: "Interstellar", filmResimAdi: "interstellar", filmYonetmenAdi: "Chrsitopher Nolan", filmFiyat: 23)
+        let f4 = Filmler(filmId: 4, filmAdi: "Anadoluda", filmResimAdi: "anadoluda", filmYonetmenAdi: "Nuri Bilge Ceylan", filmFiyat: 15)
+        let f5 = Filmler(filmId: 5, filmAdi: "The Hateful Eight", filmResimAdi: "thehatefuleight", filmYonetmenAdi: "Quentin Tarantino", filmFiyat: 12)
+        let f6 = Filmler(filmId: 6, filmAdi: "The Pianist", filmResimAdi: "thepianist", filmYonetmenAdi: "Roman Polanski", filmFiyat: 7)
+        filmlerListesi.append(f1)
+        filmlerListesi.append(f2)
+        filmlerListesi.append(f3)
+        filmlerListesi.append(f4)
+        filmlerListesi.append(f5)
+        filmlerListesi.append(f6)
         
         filmlerCollectionView.delegate = self
         filmlerCollectionView.dataSource = self
@@ -52,33 +35,30 @@ class ViewController: UIViewController {
         tasarim.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         tasarim.minimumInteritemSpacing = 10
         tasarim.minimumLineSpacing = 10
-        tasarim.scrollDirection = .horizontal
         
         let ekranGenisligi = UIScreen.main.bounds.width
         let hucreGenisligi = (ekranGenisligi - 30) / 2
-        tasarim.itemSize = CGSize(width: hucreGenisligi, height: hucreGenisligi * 1.7)
+        tasarim.itemSize = CGSize(width: hucreGenisligi, height: hucreGenisligi*1.7)
+        
         filmlerCollectionView.collectionViewLayout = tasarim
-        
-        
-        
+        //4 item , kenarlar 3 , ara boşluklar 4
+        //3 X 4 X 4 X 4 X 3
     }
-    
 }
 
-extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource, HucreProtocol {
+extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,HucreProtocol {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filmlerListesi.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let film = filmlerListesi[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "filmHucre", for: indexPath) as! FilmCollectionViewCell
         
-        cell.filmAdLabel.text = film.filmAd
-        cell.filmImageView.image = UIImage(named: film.filmResimadi!)
-        cell.filmFiyatLable.text = "\(film.filmFiyat!) ₺ "
+        cell.filmAdiLabel.text = film.filmAdi
+        cell.filmImageView.image = UIImage(named: film.filmResimAdi!)
+        cell.filmFiyatLabel.text = "\(film.filmFiyat!) ₺"
         
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.borderWidth = 0.3
@@ -87,30 +67,10 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource,
         cell.indexPath = indexPath
         
         return cell
-        
     }
-    
     
     func buttonTiklandi(indexPath: IndexPath) {
         let film = filmlerListesi[indexPath.row]
-        print("\(film.filmAd)  sepete eklendi.")
-
+        print("\(film.filmAdi!) sepete eklendi")
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let film = filmlerListesi[indexPath.row]
-        performSegue(withIdentifier: "toDetay", sender: film)
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toDetay" {
-            if let film = sender as? Filmler {
-                let gidilecekVC = segue.destination as! DetayVC
-                gidilecekVC.film = film
-            }
-        }
-    }
-    
-    
 }
