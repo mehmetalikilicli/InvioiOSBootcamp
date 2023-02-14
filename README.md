@@ -1,5 +1,9 @@
 # InvioiOSBootcamp
 
+Bitirme Projesi - Paket Olsun
+
+![PaketOlsunGif](https://user-images.githubusercontent.com/58392243/199671808-eb003a88-3bf6-4d87-ab5b-2ef1442556d7.gif)
+
 Homework6
 
 <img width="452" alt="Screen Shot 2022-10-11 at 17 22 08" src="https://user-images.githubusercontent.com/58392243/195118574-b9274508-9f19-4223-8a0d-d9e1e8a396b8.png">
